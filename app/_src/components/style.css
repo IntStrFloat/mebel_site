@@ -1,0 +1,88 @@
+.one {
+    transition: transform 0.3s ease, box-shadow 0.3s ease,background-color 0.3s ease;
+  }
+  
+.one:hover {
+    transform: translateY(-5px); /* Поднимаем карточку на 5px при наведении */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+    background-color: white;
+}
+.card-container {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 400px;
+  
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container.hovered .card-image {
+  transform: scale(1.1); /* Увеличиваем картинку при наведении */
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.nav_item {
+  padding-bottom: 6px;
+  transition: border-bottom 0.1s ease;
+}
+.nav_item:hover{
+  border-bottom: 3px solid black;
+}
+.burg{
+  z-index: 50;
+  display: none;
+}
+.close{
+  display: flex;
+}
+@media screen and (max-width:1250px) {
+  /* .nav_item{
+    display: none;
+  } */
+  .burg{
+    height: 100%;
+    display: flex;
+  }
+  .close {
+    display: none !important;
+  }
+  .nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 50px 40px;
+    row-gap: 30px;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    align-items: flex-start;
+
+  }
+}
+
+.open{
+  display: flex !important;
+}
