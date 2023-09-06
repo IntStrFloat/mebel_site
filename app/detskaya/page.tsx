@@ -5,7 +5,11 @@ import RootLayout from '@/app/layout';
 import { Carousel } from '@mantine/carousel';
 import { useState } from 'react';
 import Head from 'next/head';
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Детская мебель | Мебельщик тверь',
+  description: 'Детская мебель | Мебельщик тверь',
+};
 export default function Detskaya() {
   return (
     <main style={{ marginTop: '50px' }}>

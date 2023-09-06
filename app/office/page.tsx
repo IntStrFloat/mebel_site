@@ -5,17 +5,6 @@ import RootLayout from '@/app/layout';
 import { Carousel } from '@mantine/carousel';
 import { useState } from 'react';
 import Head from 'next/head';
-{
-  /* <Head>
-        <title>
-          Офисная мебель в Твери – Эргономичные решения для вашего рабочего пространства
-        </title>
-        <meta
-          name="description"
-          content="Повысьте эффективность работы с нашей офисной мебелью в Тверской области. Широкий выбор и быстрая доставка."
-        />
-      </Head> */
-}
 export default function Office() {
   return (
     <main style={{ marginTop: '50px' }}>
