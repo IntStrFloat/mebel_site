@@ -12,9 +12,10 @@ import {
   Image,
 } from '@mantine/core';
 import './style.css';
+import { useState } from 'react';
 import { useDisclosure } from '@mantine/hooks';
 export const TheHeader = () => {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, setOpened] = useState(false);
   return (
     // <Header height='100px' color='#0000'>
     //     <Link href='#'>Главная</Link>
@@ -56,17 +57,15 @@ export const TheHeader = () => {
         </Group>
       </Group>
       <Navbar
-        className={opened ? 'nav open' : ''}
         sx={{
           textAlign: 'center',
-          height: '6rem',
           boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, .4)',
           display: 'flex',
+          flexDirection: `${opened ? 'row' : 'column'}`,
           alignItems: 'center',
         }}
-        fixed={false}
-        position={{ top: 0, left: 0 }}
-        bg="white"
+        className={opened ? 'navMain' : 'navi '}
+        height={`${opened ? '50vh' : '6rem'}`}
       >
         <Group
           className={opened ? 'nav' : ''}
@@ -75,11 +74,24 @@ export const TheHeader = () => {
             display: 'flex',
             height: '100%',
             width: '78%',
+            flexDirection: `${opened ? 'column' : 'row'}`,
             justifyContent: 'space-evenly',
-            flexWrap: 'wrap',
+            flexWrap: `${opened ? 'nowrap' : 'wrap'}`,
             alignItems: 'center',
           }}
         >
+          <Box sx={{ height: '100%', display: 'flex', alignItems: 'flex-end' }}>
+            <Burger
+              mb={20}
+              size="lg"
+              className="burg"
+              opened={opened}
+              onClick={() => {
+                setOpened((prev) => !prev);
+              }}
+            />
+          </Box>
+
           <Text
             className={opened ? 'nav_item' : 'nav_item close'}
             color="dark"
@@ -151,7 +163,6 @@ export const TheHeader = () => {
             Контакты
           </Text>
         </Group>
-        <Burger size="lg" className="burg" opened={opened} onClick={toggle} />
       </Navbar>
     </header>
   );

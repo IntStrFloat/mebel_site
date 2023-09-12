@@ -9,16 +9,17 @@ import Head from 'next/head';
 export default function Oborydovanie() {
   return (
     <main style={{ marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
-      <Box sx={{ width: '90vw' }}>
+      <Box sx={{ width: '100vw' }}>
         <Box
+          mx="auto"
           sx={{
-            width: '70%',
+            width: '90%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
           }}
         >
-          <Title mb={20} size={70}>
+          <Title mb={20} size="500%">
             ТОРГОВОЕ ОБОРУДОВАНИЕ
           </Title>
           <Space h="xl" />
@@ -34,9 +35,16 @@ export default function Oborydovanie() {
             <br />
           </Text>
         </Box>
-        <Divider mb={60} mt={15} sx={{ boxShadow: '0px 0px 2px 0px' }} size="xs" color="gray" />
+        <Divider
+          mx="auto"
+          mb={60}
+          mt={15}
+          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          size="xs"
+          color="gray"
+        />
         <Box
-          sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-between' }}
+          sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
           <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
           <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />

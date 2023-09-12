@@ -10,10 +10,11 @@ import { Metadata } from 'next';
 export default function Detskaya() {
   return (
     <main style={{ marginTop: '50px' }}>
-      <Box mx="auto" sx={{ width: '1700px' }}>
+      <Box sx={{ width: '100vw' }}>
         <Box
+          mx="auto"
           sx={{
-            width: '1000px',
+            width: '90%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
@@ -34,10 +35,16 @@ export default function Detskaya() {
             <br />
           </Text>
         </Box>
-        <Divider mb={60} mt={15} sx={{ boxShadow: '0px 0px 2px 0px' }} size="xs" color="gray" />
-        <Box
+        <Divider
           mx="auto"
-          sx={{ display: 'flex', width: '90%', flexWrap: 'wrap', justifyContent: 'center' }}
+          mb={60}
+          mt={15}
+          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          size="xs"
+          color="gray"
+        />
+        <Box
+          sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
           <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
           <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />

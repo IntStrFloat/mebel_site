@@ -70,7 +70,7 @@ export const CardKitchen: React.FC<Props> = ({ name, description }) => {
     <Card
       className="one"
       withBorder
-      sx={{ margin: '10px', width: '880px', height: '550px', backgroundColor: '#f2f2f2' }}
+      sx={{ margin: '10px', width: '820px', height: '550px', backgroundColor: '#f2f2f2' }}
       shadow="sm"
       padding="xl"
       mb={50}
