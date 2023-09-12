@@ -70,14 +70,15 @@ export const CardKitchen: React.FC<Props> = ({ name, description }) => {
     <Card
       className="one"
       withBorder
-      sx={{ margin: '10px', width: '700px', height: '450px', backgroundColor: '#f2f2f2' }}
+      sx={{ margin: '10px', width: '880px', height: '550px', backgroundColor: '#f2f2f2' }}
       shadow="sm"
       padding="xl"
+      mb={50}
     >
       <Card.Section>
         <Carousel
           sx={{ margin: '0px' }}
-          height={320}
+          height={400}
           withIndicators
           onSlideChange={(newSlide) => setActiveSlide(newSlide)}
           controlSize={50}
