@@ -12,7 +12,7 @@ export default function Office() {
         <Box
           mx="auto"
           sx={{
-            width: '90%',
+            width: '93%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
@@ -22,7 +22,7 @@ export default function Office() {
             ОФИСНАЯ МЕБЕЛЬ
           </Title>
           <Space h="xl" />
-          <Text>
+          <Text sx={{ width: '70%' }}>
             Ваш офис - это место, где рождаются идеи и достигаются успехи. Мебельщик предлагает
             офисную мебель, сочетающую в себе функциональность, стиль и комфорт, чтобы помочь вам
             создать эффективное рабочее пространство.
@@ -39,7 +39,7 @@ export default function Office() {
           mx="auto"
           mb={60}
           mt={15}
-          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          sx={{ width: '93%', boxShadow: '0px 0px 2px 0px' }}
           size="xs"
           color="gray"
         />

@@ -97,7 +97,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/"
           >
             Главная
@@ -107,7 +107,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/kitchen"
           >
             Кухни
@@ -117,7 +117,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/shkafi"
           >
             Шкафы-купе
@@ -127,7 +127,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/office"
           >
             Офисная мебель
@@ -137,7 +137,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/oborydovanie"
           >
             Торговое оборудование
@@ -147,7 +147,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/detskaya"
           >
             Детская мебель
@@ -157,7 +157,7 @@ export const TheHeader = () => {
             color="dark"
             weight={700}
             size="lg"
-            component={Link}
+            component="a"
             href="/contacts"
           >
             Контакты

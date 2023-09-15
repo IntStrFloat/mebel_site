@@ -13,7 +13,7 @@ export default function Kitchen() {
         <Box
           mx="auto"
           sx={{
-            width: '90%',
+            width: '93%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
@@ -23,7 +23,7 @@ export default function Kitchen() {
             КУХНИ
           </Title>
           <Space h="xl" />
-          <Text>
+          <Text sx={{ width: '70%' }}>
             Уютная красивая кухня с современной мебелью непременно станет местом отдыха для всей
             семьи, так как завтраки, обеды, ужины и доверительные беседы приятно проводить в
             спокойной и расслабляющей обстановке. Если гарнитур не только красив, но и удобен, то
@@ -39,7 +39,7 @@ export default function Kitchen() {
           mx="auto"
           mb={60}
           mt={15}
-          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          sx={{ width: '93%', boxShadow: '0px 0px 2px 0px' }}
           size="xs"
           color="gray"
         />

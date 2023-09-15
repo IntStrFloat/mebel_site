@@ -13,7 +13,7 @@ export default function Shkafi() {
         <Box
           mx="auto"
           sx={{
-            width: '90%',
+            width: '93%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
@@ -23,7 +23,7 @@ export default function Shkafi() {
             ШКАФЫ КУПЕ
           </Title>
           <Space h="xl" />
-          <Text>
+          <Text sx={{ width: '70%' }}>
             Пространство и Стиль в Одном Изделии - Шкафы-купе от Мебельщика. Шкафы-купе - это не
             только функциональное решение для хранения, но и элемент дизайна, добавляющий уют и
             организованность в ваш дом. Мебельщик предлагает широкий выбор шкафов-купе, созданных с
@@ -42,7 +42,7 @@ export default function Shkafi() {
           mx="auto"
           mb={60}
           mt={15}
-          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          sx={{ width: '93%', boxShadow: '0px 0px 2px 0px' }}
           size="xs"
           color="gray"
         />

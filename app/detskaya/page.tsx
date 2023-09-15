@@ -14,7 +14,7 @@ export default function Detskaya() {
         <Box
           mx="auto"
           sx={{
-            width: '90%',
+            width: '93%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
@@ -24,7 +24,7 @@ export default function Detskaya() {
             ДЕТСКАЯ МЕБЕЛЬ
           </Title>
           <Space h="xl" />
-          <Text>
+          <Text sx={{ width: '70%' }}>
             Комната ребенка - это его уголок в мире взрослых. Мебельщик предлагает детскую мебель,
             которая объединяет радость игры с практичностью и безопасностью.
             <br />
@@ -39,7 +39,7 @@ export default function Detskaya() {
           mx="auto"
           mb={60}
           mt={15}
-          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          sx={{ width: '93%', boxShadow: '0px 0px 2px 0px' }}
           size="xs"
           color="gray"
         />

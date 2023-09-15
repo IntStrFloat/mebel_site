@@ -13,7 +13,7 @@ export default function Oborydovanie() {
         <Box
           mx="auto"
           sx={{
-            width: '90%',
+            width: '93%',
             display: 'flex',
             justifyContent: 'flex-start',
             flexDirection: 'column',
@@ -23,7 +23,7 @@ export default function Oborydovanie() {
             ТОРГОВОЕ ОБОРУДОВАНИЕ
           </Title>
           <Space h="xl" />
-          <Text>
+          <Text sx={{ width: '70%' }}>
             Удачно спроектированное торговое пространство может повысить привлекательность вашего
             бизнеса и оптимизировать поток клиентов. Мебельщик предоставляет торговое оборудование,
             которое сочетает в себе эстетику и функциональность.
@@ -39,7 +39,7 @@ export default function Oborydovanie() {
           mx="auto"
           mb={60}
           mt={15}
-          sx={{ width: '90%', boxShadow: '0px 0px 2px 0px' }}
+          sx={{ width: '93%', boxShadow: '0px 0px 2px 0px' }}
           size="xs"
           color="gray"
         />
