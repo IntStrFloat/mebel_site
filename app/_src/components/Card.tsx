@@ -105,15 +105,6 @@ export const CardKitchen: React.FC<Props> = ({ name, description }) => {
           <img style={{ width: '50px' }} src="arrow.svg" alt="" />
         </Box>
       </Box>
-      <Modal size="90%" opened={modalOpen} onClose={closeModal} sx={{ height: '100vh' }}>
-        <Paper p="md" shadow="xs" style={{ maxWidth: '80vw', maxHeight: '80vh' }}>
-          <img
-            src={images[modalImageIndex]}
-            alt={`Image ${modalImageIndex}`}
-            style={{ maxWidth: '100%', maxHeight: '100%' }}
-          />
-        </Paper>
-      </Modal>
     </Card>
   );
 };

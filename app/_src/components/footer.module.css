@@ -49,7 +49,7 @@
     .text_information{
         text-align:justify;
         width: 60% !important;
-        height: 50vh !important;
+        height: 60vh !important;
         line-clamp: 5 !important;
     }
     .text{

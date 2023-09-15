@@ -35,17 +35,19 @@ export default function Home() {
       <Box
         mt="5rem"
         mx="auto"
-        sx={{ width: '73%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}
+        sx={{ width: '70%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}
       >
         <Title weight={500}>КАТАЛОГ ТОВАРОВ</Title>
         <Box
           mt="5rem"
+          mx="auto"
+          pb={30}
           sx={{
             display: 'flex',
-            alignItems: '',
+            alignItems: 'center',
             flexDirection: 'row',
             flexWrap: 'wrap',
-            justifyContent: 'space-evenly',
+            justifyContent: 'space-between',
           }}
         >
           {/* Картинка с текстом */}
