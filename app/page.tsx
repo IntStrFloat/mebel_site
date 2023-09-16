@@ -43,12 +43,14 @@ export default function Home() {
           mx="auto"
           pb={30}
           sx={{
+            width: '100%',
             display: 'flex',
             alignItems: 'center',
             flexDirection: 'row',
             flexWrap: 'wrap',
             justifyContent: 'space-between',
           }}
+          className="fifer"
         >
           {/* Картинка с текстом */}
           <CardHome />
