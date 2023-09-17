@@ -7,6 +7,10 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 export default function Oborydovanie() {
+  const q = ['./oborydovanie/1/1.jpg', './oborydovanie/1/2.jpg'];
+  const w = ['./oborydovanie/2/1.jpg'];
+  const e = ['./oborydovanie/3/1.jpg'];
+  const r = ['./oborydovanie/4/1.jpg'];
   return (
     <main style={{ marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
       <Box sx={{ width: '100vw' }}>
@@ -46,16 +50,10 @@ export default function Oborydovanie() {
         <Box
           sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
+          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={q} />
+          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={w} />
+          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={e} />
+          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={r} />
         </Box>
       </Box>
     </main>

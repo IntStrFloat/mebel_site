@@ -2,8 +2,8 @@
 import { Carousel } from '@mantine/carousel';
 import { Box, Image } from '@mantine/core';
 import { useState } from 'react';
-
-const images = ['carousel_1.jpeg', 'carousel_2.jpg', 'carousel_3.jpg'];
+import './style.css';
+const images = ['carousel_1.jpeg', 'carousel_8.jpg', 'carousel_9.jpg'];
 
 export const HomeCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -19,7 +19,6 @@ export const HomeCarousel = () => {
           overflow: 'hidden',
           transition: 'transform 10s ease-in-out', // Плавный переход
           transform: index === activeSlide ? 'scale(1.1)' : 'scale(1)', // Масштаб для активного слайда
-          position: 'relative', // Добавляем позиционирование
         }}
       >
         <Image
@@ -33,7 +32,7 @@ export const HomeCarousel = () => {
         <Box
           sx={{
             position: 'absolute',
-            top: '50%',
+            top: '43%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             padding: '10px 20px',
@@ -64,10 +63,18 @@ export const HomeCarousel = () => {
   ));
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', margin: '0px' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '0px',
+        height: '100vh',
+        overflow: 'hidden',
+      }}
+      className="homecarousel"
+    >
       <Carousel
         sx={{ margin: '0px' }}
-        height={900}
         withIndicators
         onSlideChange={(newSlide) => setActiveSlide(newSlide)}
         controlSize={40}

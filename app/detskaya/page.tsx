@@ -8,6 +8,8 @@ import Head from 'next/head';
 import { Metadata } from 'next';
 
 export default function Detskaya() {
+  const q = ['./detskaya/1/1.jpg', './detskaya/1/2.jpg'];
+  const w = ['./detskaya/2/1.jpg', './detskaya/2/2.jpg'];
   return (
     <main style={{ marginTop: '50px' }}>
       <Box sx={{ width: '100vw' }}>
@@ -46,16 +48,8 @@ export default function Detskaya() {
         <Box
           sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} />
+          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={q} />
+          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={w} />
         </Box>
       </Box>
     </main>

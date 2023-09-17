@@ -2,26 +2,25 @@
 import React, { useState } from 'react';
 import { Card, Image, Text, Box, Modal, Paper, Button } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import './style.css';
 
 interface Props {
   name: string;
   description: string;
+  images: string[];
 }
 
-export const CardKitchen: React.FC<Props> = ({ name, description }) => {
-  const images = ['carousel_1.jpeg', 'carousel_2.jpg', 'carousel_3.jpg'];
+export const CardKitchen: React.FC<Props> = ({ name, description, images }) => {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [modalOpen, setModalOpen] = useState(false);
+  const [selected, setSelected] = useState('');
   const [modalImageIndex, setModalImageIndex] = useState(0);
+  const [opened, { open, close }] = useDisclosure(false);
+  const isMobile = useMediaQuery('(max-width: 50em)');
 
-  const openModal = (index: number) => {
-    setModalImageIndex(index);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
+  const openHangler = (url: string) => {
+    setSelected(url);
+    open();
   };
 
   const slides = images.map((url, index) => (
@@ -32,36 +31,22 @@ export const CardKitchen: React.FC<Props> = ({ name, description }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '100%',
+          width: '100%',
           overflow: 'hidden',
         }}
       >
         <Image
           src={url}
           style={{
-            maxWidth: '100%',
-            maxHeight: '100%',
+            alignSelf: 'center',
+            width: 'auto',
+            height: '100%',
             objectFit: 'cover',
+            marginTop: '-20%',
           }}
+          onClick={() => openHangler(url)}
+          className="imagee"
         />
-        <Button
-          variant="filled"
-          style={{
-            height: '40px',
-            width: '60px',
-            backgroundColor: 'white',
-            position: 'absolute',
-            top: '10px',
-            right: '10px',
-            zIndex: 1,
-          }}
-          onClick={(e) => {
-            e.stopPropagation();
-            openModal(index);
-          }}
-        >
-          <img src="maximize.svg" alt="" />
-        </Button>
       </Box>
     </Carousel.Slide>
   ));
@@ -105,6 +90,21 @@ export const CardKitchen: React.FC<Props> = ({ name, description }) => {
           <img style={{ width: '50px' }} src="arrow.svg" alt="" />
         </Box>
       </Box>
+      <Modal
+        opened={opened}
+        onClose={close}
+        fullScreen
+        size="xl"
+        transitionProps={{ transition: 'fade', duration: 200 }}
+      >
+        <Box sx={{ width: '100%', display: 'flex' }}>
+          <img
+            src={selected}
+            alt={`Image ${modalImageIndex}`}
+            style={{ margin: 'auto', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
+          />
+        </Box>
+      </Modal>
     </Card>
   );
 };

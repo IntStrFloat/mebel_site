@@ -75,10 +75,19 @@
 .navMain{
   height: 100vh;
 }
+@media screen and (max-width:1500px) {
+  .homecarousel{
+    height: 38vh !important;
+    overflow: hidden;
+  }
+}
 @media screen and (max-width:1250px) {
   /* .nav_item{
     display: none;
   } */
+  .imagee{
+    margin-top: 0px !important;
+  }
   .fifer{
     justify-content: center !important;
   }
