@@ -45,7 +45,6 @@ export const CardKitchen: React.FC<Props> = ({ name, description, images }) => {
             marginTop: '-20%',
           }}
           onClick={() => openHangler(url)}
-          className="imagee"
         />
       </Box>
     </Carousel.Slide>

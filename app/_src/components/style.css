@@ -77,7 +77,7 @@
 }
 @media screen and (max-width:1500px) {
   .homecarousel{
-    height: 38vh !important;
+    height: 30vh !important;
     overflow: hidden;
   }
 }
@@ -105,4 +105,19 @@
     flex-wrap: nowrap;
 
   }
+}
+@media screen and (max-width:650px){
+  .clasiik{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important; 
+height: 110px !important;
+}
+.clasik1{
+  height: 110px !important;
+}
+.mebelsLogo {
+  font-size: 12 !important;
+}
 }

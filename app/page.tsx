@@ -53,12 +53,12 @@ export default function Home() {
           className="fifer"
         >
           {/* Картинка с текстом */}
-          <CardHome />
-          <CardHome />
-          <CardHome />
-          <CardHome />
-          <CardHome />
-          <CardHome />
+          <CardHome name="КУХНИ" />
+          <CardHome name="ШКАФЫ-КУПЕ" />
+          <CardHome name="ОФИСНАЯМЕБЕЛЬ" />
+          <CardHome name="ТОРГОВОЕ-ОБОРУДОВАНИЕ" />
+          <CardHome name="ДЕТСКАЯ-МЕБЕЛЬ" />
+          <CardHome name="КОНТАКТЫ" />
           {/* Остальные картинки аналогичны */}
         </Box>
       </Box>

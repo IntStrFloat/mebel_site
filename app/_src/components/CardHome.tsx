@@ -4,7 +4,11 @@ import { Text, Divider, Space } from '@mantine/core';
 import './style.css';
 import { useState } from 'react';
 
-export const CardHome: React.FC = () => {
+interface CardProps {
+  name: string;
+}
+
+export const CardHome: React.FC<CardProps> = ({ name }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -21,7 +25,7 @@ export const CardHome: React.FC = () => {
         <Space h="xs" />
         <Divider color="white" size="xs" />
         <Text size={28} color="white">
-          КУХНИ
+          {name}
         </Text>
       </div>
     </div>

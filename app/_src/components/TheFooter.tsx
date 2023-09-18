@@ -192,6 +192,7 @@ export const TheFooter = () => {
             width: '90%',
             alignItems: 'flex-start',
           }}
+          className={style.footera}
         >
           <Group>
             <Text size={20} component="h2">
@@ -199,8 +200,11 @@ export const TheFooter = () => {
             </Text>
           </Group>
 
-          <Group sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <Text sx={{ textAlign: 'left' }} size={20} component="h2">
+          <Group
+            sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
+            className={style.footer_item}
+          >
+            <Text sx={{ textAlign: 'center' }} size={20} component="h2">
               Мебель
             </Text>
             <Space h="md" />
@@ -239,7 +243,15 @@ export const TheFooter = () => {
               7 (915) 722 00 75
             </Text>
           </Group>
-          <Group sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Group
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              textAlign: 'center',
+            }}
+            className={style.footer_item}
+          >
             <Text size={20} component="h2">
               Часы работы
             </Text>

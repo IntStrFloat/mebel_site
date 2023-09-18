@@ -24,7 +24,7 @@ export const TheHeader = () => {
     //     <Link href='#'>О нас</Link>
     // </Header>
     <header>
-      <Group sx={{ height: '50px', backgroundColor: 'gray' }}>
+      <Group sx={{ height: '50px', backgroundColor: 'gray' }} className="clasik1">
         <Group
           mx="auto"
           sx={{
@@ -35,6 +35,7 @@ export const TheHeader = () => {
             backgroundColor: 'gray',
             display: 'flex',
           }}
+          className="clasiik"
         >
           <Group>
             <Text mr={25} weight={500} color="white" size="md">
@@ -51,7 +52,7 @@ export const TheHeader = () => {
             <img src="phone.svg" alt="" />
             <Text weight={500} color="white" size="md">
               {' '}
-              +7 (915) 739 75 70
+              +7 (915) 722 00 75
             </Text>
           </Group>
         </Group>
@@ -59,7 +60,7 @@ export const TheHeader = () => {
       <Navbar
         sx={{
           textAlign: 'center',
-          boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, .4)',
+          boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.1)',
           display: 'flex',
           flexDirection: `${opened ? 'row' : 'column'}`,
           alignItems: 'center',

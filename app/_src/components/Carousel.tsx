@@ -43,6 +43,7 @@ export const HomeCarousel = () => {
             opacity: index === activeSlide ? 1 : 0, // Показываем надпись только на активном слайде
             transition: 'opacity 1s ease-in-out', // Плавная анимация opacity
           }}
+          className="mebelsLogo"
         >
           Мебельная фабрика &lt;&lt;Мебельщик&gt;&gt;
         </Box>
