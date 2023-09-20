@@ -10,9 +10,6 @@ import { TheHeader } from './_src/components/TheHeader';
 import { TheFooter } from './_src/components/TheFooter';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'FSDFSDFSDf',
-};
 export default function Home() {
   return (
     <>
