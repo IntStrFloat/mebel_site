@@ -5,6 +5,7 @@ import { useServerInsertedHTML } from 'next/navigation';
 import { useState } from 'react';
 import { MantineProvider } from '@mantine/core';
 import { TheHeader } from './_src/components/TheHeader';
+import Head from 'next/head';
 
 export const useGluedEmotionCache = (key = 'emotion') => {
   const [cache] = useState(() => {
