@@ -72,81 +72,86 @@ export default function Prihozaya() {
           <CardKitchen
             alt="Индивидуальные прихожие от Мебельщика в Твери и Тверской области: стиль и комфорт"
             style={{ marginTop: '-350px' }}
-            name={'Проект №51'}
+            name={'Проект №1'}
             description={'ЛДСП'}
             images={с}
           />
           <CardKitchen
             alt="Мебель для прихожей, придающая характер вашему интерьеру в Твери и Тверской области"
             style={{ marginTop: '-480px' }}
-            name={'Проект №52'}
+            name={'Проект №2'}
             description={'ЛДСП'}
             images={z}
           />
           <CardKitchen
             alt="Создайте гармоничное приглашающее впечатление с мебелью для прихожей Мебельщика в Твери и Тверской области"
             style={{ marginTop: '-380px' }}
-            name={'Проект №53'}
+            name={'Проект №3'}
             description={'ЛДСП'}
             images={e}
           />
           <CardKitchen
             alt="Уют и функциональность: мебель для прихожей от Мебельщика в Твери и Тверской области"
             style={{ marginTop: '-400px' }}
-            name={'Проект №54'}
+            name={'Проект №4'}
             description={'ЛДСП'}
             images={q}
           />
           <CardKitchen
             alt="Модные прихожие, созданные с любовью к деталям, в Твери и Тверской области"
             style={{ marginTop: '-400px' }}
-            name={'Проект №55'}
+            name={'Проект №5'}
             description={'ЛДСП'}
             images={c}
           />
           <CardKitchen
             alt="Современная мебель для прихожей, созданная с учетом ваших потребностей в Твери и Тверской области"
             style={{ marginTop: '-480px' }}
-            name={'Проект №56'}
+            name={'Проект №6'}
             description={'ЛДСП'}
             images={r}
           />
           <CardKitchen
             alt="Индивидуальные решения для прихожей, подчеркивающие вашу уникальность в Твери и Тверской области"
             style={{ marginTop: '-480px' }}
-            name={'Проект №57'}
+            name={'Проект №7'}
             description={'ЛДСП'}
             images={t}
           />
           <CardKitchen
             alt="Прихожие от Мебельщика в Твери и Тверской области: стиль и практичность"
             style={{ marginTop: '-480px' }}
-            name={'Проект №58'}
+            name={'Проект №8'}
             description={'ЛДСП'}
             images={y}
           />
           <CardKitchen
             alt="Индивидуальные решения для прихожей, подчеркивающие вашу уникальность в Твери и Тверской области"
             style={{ marginTop: '-480px' }}
-            name={'Проект №59'}
+            name={'Проект №9'}
             description={'ЛДСП'}
             images={v}
           />
           <CardKitchen
             alt="Прихожие от Мебельщика в Твери и Тверской области: стиль и практичность"
             style={{ marginTop: '-300px' }}
-            name={'Проект №60'}
+            name={'Проект №10'}
             description={'ЛДСП'}
             images={u}
           />
           <CardKitchen
             alt="Индивидуальные решения для прихожей, подчеркивающие вашу уникальность в Твери и Тверской области"
             style={{ marginTop: '-490px' }}
-            name={'Проект №61'}
+            name={'Проект №11'}
             description={'ЛДСП'}
             images={l}
           />
-          <CardKitchen alt="" name={'Проект №62'} description={'ЛДСП'} images={w} />
+          <CardKitchen
+            alt="Индивидуальные решения для прихожей, подчеркивающие вашу уникальность в Твери и Тверской области"
+            name={'Проект №12'}
+            description={'ЛДСП'}
+            images={w}
+          />
         </Box>
       </Box>
     </main>

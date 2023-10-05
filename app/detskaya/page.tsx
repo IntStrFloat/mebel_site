@@ -56,49 +56,49 @@ export default function Detskaya() {
           <CardKitchen
             alt="Мебель для детей: радость и удобство от мебельной фабрики в Твери"
             style={{ marginTop: '-100px' }}
-            name={'Проект №71'}
+            name={'Проект №1'}
             description={'ЛДСП'}
             images={q}
           />
           <CardKitchen
             alt="Комфорт и качество: детская мебель от Мебельщика в Твери"
             style={{ marginTop: '-120px' }}
-            name={'Проект №72'}
+            name={'Проект №2'}
             description={'ЛДСП'}
             images={d}
           />
           <CardKitchen
             alt="Детские комнаты с яркой и функциональной мебелью в Тверской области"
             style={{ marginTop: '-150px' }}
-            name={'Проект №73'}
+            name={'Проект №3'}
             description={'ЛДСП'}
             images={i}
           />
           <CardKitchen
             alt="Современные и безопасные детские мебельные решения"
             style={{ marginTop: '-390px' }}
-            name={'Проект №74'}
+            name={'Проект №4'}
             description={'ЛДСП'}
             images={m}
           />
           <CardKitchen
             alt="Индивидуальная детская мебель от Мебельщика в Твери"
             style={{ marginTop: '-150px' }}
-            name={'Проект №75'}
+            name={'Проект №5'}
             description={'ЛДСП'}
             images={n}
           />
           <CardKitchen
             alt='alt="Мебель для детей: радость и удобство от мебельной фабрики в Твери"'
             style={{ marginTop: '-150px' }}
-            name={'Проект №76'}
+            name={'Проект №6'}
             description={'ЛДСП'}
             images={b}
           />
           <CardKitchen
             alt="Комфорт и качество: детская мебель от Мебельщика в Твери"
-            style={{ marginTop: '-150px' }}
-            name={'Проект №77'}
+            style={{ marginTop: '100px' }}
+            name={'Проект №7'}
             description={'ЛДСП'}
             images={e}
           />

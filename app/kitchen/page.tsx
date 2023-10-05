@@ -7,10 +7,10 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 export default function Kitchen() {
-  const q = ['./kitchens/1/1.jpg', './kitchens/1/2.jpg', './kitchens/1/3.jpg'];
+  const q = ['./kitchens/1/2.jpg', './kitchens/1/1.jpg', './kitchens/1/3.jpg'];
   const w = ['./kitchens/2/1.jpg', './kitchens/2/2.jpg'];
   const e = ['./kitchens/3/1.jpg', './kitchens/3/2.jpg', './kitchens/3/3.jpg'];
-  const r = ['./kitchens/4/1.jpg', './kitchens/4/2.jpg'];
+  const r = ['./kitchens/4/2.jpg', './kitchens/4/1.jpg'];
   const t = ['./kitchens/5/1.jpg', './kitchens/5/2.jpg'];
   const y = ['./kitchens/6/1.jpg', './kitchens/6/2.jpg'];
   const u = ['./kitchens/7/1.jpg', './kitchens/7/2.jpg'];
@@ -97,125 +97,125 @@ export default function Kitchen() {
           <CardKitchen
             alt="Индивидуальные кухни Мебельщика в Твери: качество и стиль"
             style={{ marginTop: '-200px' }}
-            name={'Проект №11'}
+            name={'Проект №1'}
             description={'МДФ крашенный'}
             images={j}
           />
           <CardKitchen
             alt="Современные кухонные интерьеры от мебельной фабрики в Твери и Тверской области"
             style={{ marginTop: '-100px' }}
-            name={'Проект №12'}
+            name={'Проект №2'}
             description={'МДФ плёнка'}
             images={q}
           />
           <CardKitchen
             alt="Кухни для комфортного готовки и семейных ужинов в Твери"
             style={{ marginTop: '-150px' }}
-            name={'Проект №13'}
+            name={'Проект №3'}
             description={'МДФ плёнка'}
             images={k}
           />
           <CardKitchen
             alt="Выбирайте качество и надежность с кухонной мебелью Мебельщика Тверь"
             style={{ marginTop: '-150px' }}
-            name={'Проект №14'}
+            name={'Проект №4'}
             description={'МДФ пластик'}
             images={h}
           />
           <CardKitchen
             alt="Кухонная мебель Мебельщика в Твери: искусство в каждой детали"
             style={{ marginTop: '-250px' }}
-            name={'Проект №15'}
+            name={'Проект №5'}
             description={'МДФ крашенный'}
             images={x}
           />
           <CardKitchen
             alt="Инновационные решения для кухонных интерьеров в Тверской области"
             style={{ marginTop: '-300px' }}
-            name={'Проект №16'}
+            name={'Проект №6'}
             description={'МДФ плёнка'}
             images={w}
           />
           <CardKitchen
             alt="Красота и функциональность в каждой кухне от мебельной фабрики - Мебельщик Тверь и Тверская область"
             style={{ marginTop: '-150px' }}
-            name={'Проект №17'}
+            name={'Проект №7'}
             description={'МДФ плёнка'}
             images={z}
           />
           <CardKitchen
             alt="Дизайнерские кухонные решения для вашего дома в Твери и Тверской области"
             style={{ marginTop: '-120px' }}
-            name={'Проект №18'}
+            name={'Проект №8'}
             description={'МДФ крашенный'}
             images={s}
           />
           <CardKitchen
             alt="Элегантные кухни с характером от Мебельщика в Твери"
-            style={{ marginTop: '-200px' }}
-            name={'Проект №19'}
+            style={{ marginTop: '-130px' }}
+            name={'Проект №9'}
             description={'МДФ крашенный'}
             images={c}
           />
           <CardKitchen
             alt="Тверская мебельная фабрика представляет: лучшие кухни "
-            style={{ marginTop: '-210px' }}
-            name={'Проект №110'}
+            style={{ marginTop: '-150px' }}
+            name={'Проект №10'}
             description={'МДФ плёнка'}
             images={e}
           />
           <CardKitchen
             alt="Кухонная мебель на заказ Тверь и Тверская область"
-            style={{ marginTop: '-210px' }}
-            name={'Проект №111'}
+            style={{ marginTop: '-150px' }}
+            name={'Проект №11'}
             description={'ЛДСП эгерь'}
             images={r}
           />
           <CardKitchen
             alt="Кухни на заказ от мебельной фабрики Мебельщик Тверь и Тверская область"
-            style={{ marginTop: '-210px' }}
-            name={'Проект №112'}
+            style={{ marginTop: '-150px' }}
+            name={'Проект №12'}
             description={'МДФ плёнка'}
             images={t}
           />
           <CardKitchen
             alt="Кухонные решения от мебельной фабрики Тверь и Тверская область"
-            style={{ marginTop: '-210px' }}
-            name={'Проект №113'}
+            style={{ marginTop: '-150px' }}
+            name={'Проект №13'}
             description={'ЛДСП эгерь'}
             images={y}
           />
           <CardKitchen
             alt="Индивидуальные кухни от мебельной фабрики Тверь и Тверская область"
-            style={{ marginTop: '-210px' }}
-            name={'Проект №114'}
+            style={{ marginTop: '-160px' }}
+            name={'Проект №14'}
             description={'МДФ пластик'}
             images={u}
           />
           <CardKitchen
             alt="Современные кухни от мебельной фабрики Тверь и Тверская область"
-            style={{ marginTop: '-210px' }}
-            name={'Проект №115'}
+            style={{ marginTop: '-160px' }}
+            name={'Проект №15'}
             description={'МДФ плёнка'}
             images={i}
           />
           <CardKitchen
             alt="Кухонные решения от мебельной фабрики Тверь и Тверская область"
             style={{ marginTop: '-410px' }}
-            name={'Проект №116'}
+            name={'Проект №16'}
             description={'МДФ плёнка'}
             images={o}
           />
           <CardKitchen
             alt="Мебель Тверь от мебельной фабрики Тверь и Тверская область"
-            name={'Проект №117'}
+            name={'Проект №17'}
             description={'Массив'}
             images={p}
           />
           <CardKitchen
             alt="Кухонная мебель от мебельной фабрики Тверь и Тверская область"
-            style={{ marginTop: '-210px' }}
-            name={'Проект №118'}
+            style={{ marginTop: '-160px' }}
+            name={'Проект №18'}
             description={'МДФ плёнка'}
             images={a}
           />
@@ -223,21 +223,21 @@ export default function Kitchen() {
           <CardKitchen
             alt="Кухни на заказ от мебельной фабрики Тверь и Тверская область"
             style={{ marginTop: '-110px' }}
-            name={'Проект №119'}
+            name={'Проект №19'}
             description={'МДФ крашенный'}
             images={d}
           />
           <CardKitchen
             alt="Кухни Тверская область от мебельной фабрики Тверь и Тверская область"
             style={{ marginTop: '-310px' }}
-            name={'Проект №120'}
+            name={'Проект №20'}
             description={'МДФ пластик'}
             images={f}
           />
           <CardKitchen
             alt="Кухни Тверская область "
             style={{ marginTop: '-110px' }}
-            name={'Проект №121'}
+            name={'Проект №21'}
             description={'МДФ крашенный'}
             images={g}
           />
@@ -245,7 +245,7 @@ export default function Kitchen() {
           <CardKitchen
             alt="Кухни Тверская область"
             style={{ marginTop: '-140px' }}
-            name={'Проект №122'}
+            name={'Проект №22'}
             description={'МДФ крашенный'}
             images={l}
           />

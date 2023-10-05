@@ -76,12 +76,25 @@ export const TheFooter = () => {
               alignItems: 'center',
             }}
           >
-            <a href="tel:89036306370" style={{ textDecoration: 'none', color: 'black' }}>
+            <a
+              href="tel:89157397570"
+              style={{
+                textDecoration: 'none',
+                color: 'black',
+                display: 'block',
+                marginBottom: '5px',
+              }}
+            >
               <Text mb={-15} weight={500}>
                 7 (915) 722 00 75
               </Text>
             </a>
 
+            <a href="tel:89036302909" style={{ textDecoration: 'none', color: 'black' }}>
+              <Text mb={-15} weight={500}>
+                7 (903) 630 29 09
+              </Text>
+            </a>
             <Text weight={300}>Позвоните мне</Text>
           </Group>
           <Group sx={{ display: 'flex', flexDirection: 'column' }}>

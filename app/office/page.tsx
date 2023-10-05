@@ -6,7 +6,7 @@ import { Carousel } from '@mantine/carousel';
 import { useState } from 'react';
 import Head from 'next/head';
 export default function Office() {
-  const q = ['./office/1/1.jpg', './office/1/2.jpg', './office/1/3.jpg', './office/1/4.jpg'];
+  const q = ['./office/1/1.jpg', './office/1/2.jpg', './office/1/3.jpg'];
 
   const r = ['./office/4/1.jpg', './office/4/2.jpg', './office/4/3.jpg'];
   const w = [
@@ -19,7 +19,7 @@ export default function Office() {
     './office/5/7.jpg',
     './office/5/8.jpg',
   ];
-  const g = ['./office/8/1.jpg', './office/8/2.jpg', './office/8/3.jpg', './office/8/4.jpg'];
+  const g = ['./office/8/1.jpg', './office/8/2.jpg', './office/8/3.jpg'];
   const e = ['./office/6/1.jpg'];
   const t = ['./office/7/1.jpg', './office/7/2.jpg'];
   return (
@@ -64,27 +64,27 @@ export default function Office() {
         >
           <CardKitchen
             alt="Современные офисные интерьеры от Мебельщика в Твери и Тверской области"
-            name={'Проект №31'}
+            name={'Проект №1'}
             description={'Металлокаркас'}
             images={w}
           />
           <CardKitchen
             alt="Офисная мебель для максимальной эффективности в Твери и Тверской области"
-            name={'Проект №32'}
+            name={'Проект №2'}
             description={'ЛДСП эгерь'}
             images={q}
           />
 
           <CardKitchen
             alt="Современные офисные интерьеры от Мебельщика в Твери и Тверской области"
-            name={'Проект №33'}
+            name={'Проект №3'}
             description={'ЛДСП'}
             images={g}
           />
 
           <CardKitchen
             alt="Современные офисные решения от мебельной фабрики Мебельщик в Твери и Тверской области"
-            name={'Проект №34'}
+            name={'Проект №4'}
             description={'ЛДСП'}
             images={r}
           />

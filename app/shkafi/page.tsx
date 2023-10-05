@@ -80,77 +80,77 @@ export default function Shkafi() {
             <CardKitchen
               alt="Индивидуальные шкафы-купе Мебельщика в Твери: стиль и удобство от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №21'}
+              name={'Проект №1'}
               description={'ЛДСП'}
               images={с}
             />
             <CardKitchen
               alt="Современные решения для организации пространства: шкафы-купе в Тверской области от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №22'}
+              name={'Проект №2'}
               description={'ЛДСП'}
               images={y}
             />
             <CardKitchen
               alt="Шкафы-купе для максимальной функциональности и визуального воздействия от Мебельщика"
               style={{ marginTop: '-100px' }}
-              name={'Проект №23'}
+              name={'Проект №3'}
               description={'ЛДСП'}
               images={g}
             />
             <CardKitchen
               alt="Модульные шкафы-купе, созданные для вашего комфорта от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №24'}
+              name={'Проект №4'}
               description={'ЛДСП'}
               images={x}
             />
             <CardKitchen
               alt="Соберите свой идеальный шкаф-купе вместе с Мебельщиком в Твери от Мебельщика"
-              style={{ marginTop: '-300px' }}
-              name={'Проект №25'}
+              style={{ marginTop: '-160px' }}
+              name={'Проект №5'}
               description={'ЛДСП'}
               images={q}
             />
             <CardKitchen
               alt="Шкафы-купе, сочетающие стиль и практичность, от мебельной фабрики от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №26'}
+              name={'Проект №6'}
               description={'ЛДСП'}
               images={v}
             />
             <CardKitchen
               alt="Индивидуальные шкафы-купе Мебельщика в Твери и Тверской области: стиль и удобство от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №27'}
+              name={'Проект №7'}
               description={'ЛДСП'}
               images={b}
             />
             <CardKitchen
               alt="Современные решения для организации пространства в Твери и Тверской области: шкафы-купе от Мебельщика"
               style={{ marginTop: '-100px' }}
-              name={'Проект №28'}
+              name={'Проект №8'}
               description={'ЛДСП'}
               images={n}
             />
             <CardKitchen
               alt="Шкафы-купе для максимальной функциональности и визуального воздействия в Твери от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №29'}
+              name={'Проект №9'}
               description={'ЛДСП'}
               images={e}
             />
             <CardKitchen
               alt="Шкафы-купе, сочетающие стиль и практичность, от мебельной фабрики в Твери и Тверской области от Мебельщика"
               style={{ marginTop: '-100px' }}
-              name={'Проект №210'}
+              name={'Проект №10'}
               description={'ЛДСП'}
               images={r}
             />
             <CardKitchen
               alt="Шкафы-купе по индивидуальным заказам в Твери и Тверской области от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №211'}
+              name={'Проект №11'}
               description={'ЛДСП'}
               images={t}
             />
@@ -158,28 +158,28 @@ export default function Shkafi() {
             <CardKitchen
               alt="Мебель для хранения с характером: шкафы-купе от Мебельщика в Твери от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №212'}
+              name={'Проект №12'}
               description={'ЛДСП'}
               images={o}
             />
             <CardKitchen
               alt="Кастомные шкафы-купе, созданные для вашего дома в Твери от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №213'}
+              name={'Проект №13'}
               description={'ЛДСП'}
               images={qq}
             />
             <CardKitchen
               alt="Шкафы-купе, отражающие уют и функциональность Тверской области от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №214'}
+              name={'Проект №14'}
               description={'ЛДСП'}
               images={a}
             />
             <CardKitchen
               alt="Шкафы-купе, придающие стиль вашему интерьеру в Твери и Тверской области от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №215'}
+              name={'Проект №15'}
               description={'ЛДСП'}
               images={s}
             />
@@ -187,14 +187,14 @@ export default function Shkafi() {
             <CardKitchen
               alt="Шкафы-купе по индивидуальным заказам в Твери и Тверской области  от Мебельщика"
               style={{ marginTop: '-100px' }}
-              name={'Проект №216'}
+              name={'Проект №16'}
               description={'ЛДСП'}
               images={h}
             />
             <CardKitchen
               alt="Шкафы-купе по индивидуальным заказам в Твери и Тверской области от Мебельщика"
               style={{ marginTop: '-300px' }}
-              name={'Проект №217'}
+              name={'Проект №17'}
               description={'ЛДСП'}
               images={k}
             />
