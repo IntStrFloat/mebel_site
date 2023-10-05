@@ -9,7 +9,7 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Пидорас',
+  title: 'Кухни на заказ в Тверь недорога по индивидуальным размерам. Намрямую с фабрики!',
   description: 'Next App',
 };
 

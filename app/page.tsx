@@ -9,8 +9,15 @@ import Head from 'next/head';
 import { TheHeader } from './_src/components/TheHeader';
 import { TheFooter } from './_src/components/TheFooter';
 import { Metadata } from 'next';
+import { useMediaQuery } from '@mantine/hooks';
+import './globals.css';
+import Link from 'next/link';
 
 export default function Home() {
+  const matches = useMediaQuery('(max-width: 1350px)', true, { getInitialValueInEffect: false });
+  const matchesPhone = useMediaQuery('(max-width: 863px)', true, {
+    getInitialValueInEffect: false,
+  });
   return (
     <>
       <head>
@@ -19,7 +26,10 @@ export default function Home() {
       <main>
         <HomeCarousel />
         <Box sx={{ backgroundColor: '#F4F4F4;' }}>
-          <Box mx="auto" sx={{ width: '70%', paddingTop: '5rem', paddingBottom: '5rem' }}>
+          <Box
+            mx="auto"
+            sx={{ width: matchesPhone ? '90%' : '70%', paddingTop: '5rem', paddingBottom: '5rem' }}
+          >
             <Title>Мебельщик - Изготовливаем кухни на заказ в Твери и Тверской области</Title>
             <Space h="  xl" />
             <Text>
@@ -37,38 +47,74 @@ export default function Home() {
             </Text>
           </Box>
         </Box>
-        <Box
-          mt="5rem"
-          mx="auto"
-          sx={{ width: '70%', display: 'flex', alignItems: 'center', flexDirection: 'column' }}
-        >
-          <Title weight={500}>КАТАЛОГ ТОВАРОВ</Title>
+        <Box mt="5rem" mx="auto" sx={{ width: matchesPhone ? '60%' : '74%' }}>
+          <Title sx={{ textAlign: 'center' }} mx="auto" weight={500}>
+            КАТАЛОГ ТОВАРОВ
+          </Title>
           <Box
-            mt="5rem"
-            mx="auto"
-            pb={30}
             sx={{
-              width: '100%',
-              display: 'flex',
-              alignItems: 'center',
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              justifyContent: 'space-between',
+              marginTop: '60px',
+              display: 'grid',
+              gridTemplateColumns:
+                matches && !matchesPhone ? '1fr 1fr' : matchesPhone ? '0.8fr' : '1fr 1fr 1fr',
+              gap: '40px',
+              justifyItems: 'center',
+              justifyContent: 'center',
+              marginBottom: '40px',
             }}
-            className="fifer"
           >
             {/* Картинка с текстом */}
-            <CardHome name="КУХНИ" />
-            <CardHome name="ШКАФЫ-КУПЕ" />
-            <CardHome name="ОФИСНАЯМЕБЕЛЬ" />
-            <CardHome name="ТОРГОВОЕ-ОБОРУДОВАНИЕ" />
-            <CardHome name="ДЕТСКАЯ-МЕБЕЛЬ" />
-            <CardHome name="КОНТАКТЫ" />
+            <a href="/kitchen">
+              <CardHome
+                alt="Изысканные и качественные кухни от мебельщика в Твери и Тверской области - Мебельщик"
+                src="homeCard.jpg"
+                name="КУХНИ"
+              />
+            </a>
+            <a href="/shkafi">
+              <CardHome
+                alt="Просторные шкафы-купе по индивидуальным заказам в Твери и Тверской области по низким ценам - Мебельщик"
+                src="kypeMainKatalog.jpg"
+                name="ШКАФЫ-КУПЕ"
+              />
+            </a>
+            <a href="/office">
+              <CardHome
+                alt="Офисная мебель, спроектированная для производительности в Твери и Тверской области - Мебельщик"
+                src="officeMainKatalog.jpg"
+                name="ОФИСНАЯ&nbsp;МЕБЕЛЬ"
+              />
+            </a>
+            <a href="/oborydovanie">
+              <CardHome
+                alt="Разнообразное торговое оборудование для вашего предприятия в Твери и Тверской области"
+                src="torgovoeMainKatalog.jpg"
+                name="ТОРГОВОЕ&nbsp;ОБОРУДОВАНИЕ"
+              />
+            </a>
+            <a href="/detskaya">
+              <CardHome
+                alt="Детская мебель, созданная с любовью и заботой. Тверская мебельная фабрика Мебельщик"
+                src="detskayaMainKatalog.jpg"
+                name="ДЕТСКАЯ&nbsp;МЕБЕЛЬ"
+              />
+            </a>
+            <a href="#">
+              <CardHome
+                alt="Красота и практичность в каждой детали ванных комнат. Тверская мебельная фабрика Мебельщик"
+                src="vannieMainKatalog.jpg"
+                name="ВАННЫЕ"
+              />
+            </a>
+
             {/* Остальные картинки аналогичны */}
           </Box>
         </Box>
         <Box sx={{ backgroundColor: '#F4F4F4;' }}>
-          <Box mx="auto" sx={{ width: '70%', paddingTop: '5rem', paddingBottom: '5rem' }}>
+          <Box
+            mx="auto"
+            sx={{ width: matchesPhone ? '90%' : '70%', paddingTop: '5rem', paddingBottom: '5rem' }}
+          >
             <Title>Мебельщик - Ваш Путь к Уникальным Кухням на Заказ</Title>
             <Space h="xl" />
             <Text>

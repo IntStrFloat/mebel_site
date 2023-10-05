@@ -1,11 +1,9 @@
-import { TheFooter } from '../_src/components/TheFooter';
-import { TheHeader } from '../_src/components/TheHeader';
-import { Provider } from '../provider';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Детская мебель | Мебельщик тверь',
-  description: 'Детская мебель | Мебельщик тверь',
+  title: 'Детская мебель от профессионалов | Мебельщик в Твери и Тверской области',
+  description:
+    'Детская мебель от Мебельщика в Твери и Тверской области. Мы предлагаем безопасные и креативные решения для детских комнат, чтобы ваши дети чувствовали себя уютно.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

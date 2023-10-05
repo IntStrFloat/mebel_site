@@ -1,8 +1,9 @@
 'use client';
 import Link from 'next/link';
 import Head from 'next/head';
+import { useState } from 'react';
 import { useForm } from '@mantine/form';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import style from './footer.module.css';
 
 import {
@@ -19,13 +20,29 @@ import {
   Modal,
 } from '@mantine/core';
 export const TheFooter = () => {
-  const form = useForm({
-    initialValues: {
-      name: '',
-      email: '',
-    },
-  });
   const [opened, { open, close }] = useDisclosure(false);
+  const [email, setEmail] = useState<string>('');
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch('/api/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.status === 200) {
+        alert('Письмо отправлено успешно');
+      } else {
+        alert('Произошла ошибка при отправке письма');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Произошла ошибка при отправке письма');
+    }
+  };
+
   return (
     <footer>
       <Box
@@ -49,7 +66,7 @@ export const TheFooter = () => {
           className={style.first_section}
         >
           <Text size={30} weight={700}>
-            Мебельщик 69
+            Мебельщик
           </Text>
           <Group
             sx={{
@@ -59,9 +76,12 @@ export const TheFooter = () => {
               alignItems: 'center',
             }}
           >
-            <Text mb={-15} weight={500}>
-              7 (915) 722 00 75
-            </Text>
+            <a href="tel:89036306370" style={{ textDecoration: 'none', color: 'black' }}>
+              <Text mb={-15} weight={500}>
+                7 (915) 722 00 75
+              </Text>
+            </a>
+
             <Text weight={300}>Позвоните мне</Text>
           </Group>
           <Group sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -77,7 +97,7 @@ export const TheFooter = () => {
             <a href="#">
               <img src="brand_vk.svg" alt="" />
             </a>
-            <a href="#">
+            <a href="mailto:mebelshik69@mail.ru">
               <img src="mail2.svg" alt="" />
             </a>
           </Group>
@@ -111,9 +131,11 @@ export const TheFooter = () => {
           <TextInput
             color="white"
             label="Почта"
+            type="email"
             variant="unstyled"
             placeholder="Ваша почта"
-            {...form.getInputProps('email')}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             size="xl"
           />
 
@@ -163,7 +185,7 @@ export const TheFooter = () => {
             }}
             className={style.button_section}
           >
-            <Button size="xl" color="dark" onClick={() => {}} sx={{ width: '65%' }}>
+            <Button size="xl" color="dark" onClick={handleSubmit} sx={{ width: '65%' }}>
               Подписаться
             </Button>
             <Text variant="p" style={{ fontSize: '12px', textAlign: 'center', width: '55%' }}>
@@ -196,7 +218,9 @@ export const TheFooter = () => {
         >
           <Group>
             <Text size={20} component="h2">
-              Главная
+              <a style={{ textDecoration: 'none', color: 'black' }} href="/">
+                Главная
+              </a>
             </Text>
           </Group>
 
@@ -209,19 +233,45 @@ export const TheFooter = () => {
             </Text>
             <Space h="md" />
             <Text color="#a3a3a3" size={15} component="p">
-              Кухни
+              <a style={{ textDecoration: 'none', color: 'rgb(163, 163, 163)  ' }} href="/kitchen">
+                Кухни
+              </a>
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              Шкафы-купе
+              <a style={{ textDecoration: 'none', color: 'rgb(163, 163, 163)  ' }} href="/shkafi">
+                Шкафы-купе
+              </a>
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              Офисная мебель
+              <a style={{ textDecoration: 'none', color: 'rgb(163, 163, 163)  ' }} href="/office">
+                Офисная мебель
+              </a>
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              Торговое оборудование
+              <a
+                style={{ textDecoration: 'none', color: 'rgb(163, 163, 163) ' }}
+                href="/oborydovanie"
+              >
+                Торговое оборудование
+              </a>
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              Детская мебель
+              <a style={{ textDecoration: 'none', color: 'rgb(163, 163, 163)  ' }} href="/detskaya">
+                Детская мебель
+              </a>
+            </Text>
+            <Text color="#a3a3a3" size={15} component="p">
+              <a
+                style={{ textDecoration: 'none', color: 'rgb(163, 163, 163)  ' }}
+                href="/prihozaya"
+              >
+                Прихожие
+              </a>
+            </Text>
+            <Text color="#a3a3a3" size={15} component="p">
+              <a style={{ textDecoration: 'none', color: 'rgb(163, 163, 163)  ' }} href="/vannie">
+                Ванные
+              </a>
             </Text>
           </Group>
 
@@ -237,10 +287,10 @@ export const TheFooter = () => {
               7 (915) 722 00 75
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              Михаил Отчество:
+              Михаил Викторович:
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              7 (915) 722 00 75
+              7 (903) 630 63 70
             </Text>
           </Group>
           <Group

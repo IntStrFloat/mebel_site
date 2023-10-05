@@ -1,22 +1,22 @@
 'use client';
-import React, { useState } from 'react';
+import React, { DetailedHTMLProps, HTMLAttributes, useState } from 'react';
 import { Card, Image, Text, Box, Modal, Paper, Button } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import './style.css';
 
-interface Props {
+interface Props extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   name: string;
   description: string;
   images: string[];
+  alt: string;
 }
 
-export const CardKitchen: React.FC<Props> = ({ name, description, images }) => {
+export const CardKitchen: React.FC<Props> = ({ alt, name, description, images, style }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [selected, setSelected] = useState('');
   const [modalImageIndex, setModalImageIndex] = useState(0);
   const [opened, { open, close }] = useDisclosure(false);
-  const isMobile = useMediaQuery('(max-width: 50em)');
 
   const openHangler = (url: string) => {
     setSelected(url);
@@ -28,33 +28,39 @@ export const CardKitchen: React.FC<Props> = ({ name, description, images }) => {
       <Box
         sx={{
           position: 'relative',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+
           width: '100%',
-          overflow: 'hidden',
         }}
       >
         <Image
+          alt={alt}
           src={url}
           style={{
             alignSelf: 'center',
-            width: 'auto',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            width: '100%',
             height: '100%',
-            objectFit: 'cover',
-            marginTop: '-20%',
+            ...style,
           }}
           onClick={() => openHangler(url)}
         />
       </Box>
     </Carousel.Slide>
   ));
-
+  const matchesPhone = useMediaQuery('(max-width: 863px)', true, {
+    getInitialValueInEffect: false,
+  });
   return (
     <Card
       className="one"
       withBorder
-      sx={{ margin: '10px', width: '820px', height: '550px', backgroundColor: '#f2f2f2' }}
+      sx={{
+        margin: '10px',
+        width: '820px',
+        height: matchesPhone ? '350px' : '600px',
+        backgroundColor: '#f2f2f2',
+      }}
       shadow="sm"
       padding="xl"
       mb={50}
@@ -62,7 +68,7 @@ export const CardKitchen: React.FC<Props> = ({ name, description, images }) => {
       <Card.Section>
         <Carousel
           sx={{ margin: '0px' }}
-          height={400}
+          height={matchesPhone ? 200 : 450}
           withIndicators
           onSlideChange={(newSlide) => setActiveSlide(newSlide)}
           controlSize={50}
@@ -94,6 +100,7 @@ export const CardKitchen: React.FC<Props> = ({ name, description, images }) => {
         onClose={close}
         fullScreen
         size="xl"
+        sx={{ display: 'flex', alignItems: 'center' }}
         transitionProps={{ transition: 'fade', duration: 200 }}
       >
         <Box sx={{ width: '100%', display: 'flex' }}>

@@ -9,8 +9,23 @@ import Head from 'next/head';
 export default function Oborydovanie() {
   const q = ['./oborydovanie/1/1.jpg', './oborydovanie/1/2.jpg'];
   const w = ['./oborydovanie/2/1.jpg'];
-  const e = ['./oborydovanie/3/1.jpg'];
-  const r = ['./oborydovanie/4/1.jpg'];
+  const e = ['./oborydovanie/3/1.jpg', './oborydovanie/3/2.jpg', './oborydovanie/3/3.jpg'];
+  const r = [
+    './oborydovanie/5/1.jpg',
+    './oborydovanie/5/2.jpg',
+    './oborydovanie/5/3.jpg',
+    './oborydovanie/5/4.jpg',
+  ];
+  const t = ['./office/2/1.jpg', './office/2/2.jpg'];
+  const y = ['./office/3/1.jpg'];
+  const u = ['./oborydovanie/6/1.jpg', './oborydovanie/6/2.jpg', './oborydovanie/6/3.jpg'];
+  const i = [
+    './oborydovanie/7/1.jpg',
+    './oborydovanie/7/2.jpg',
+    './oborydovanie/7/3.jpg',
+    './oborydovanie/7/4.jpg',
+  ];
+  const o = ['./oborydovanie/8/1.jpg', './oborydovanie/8/2.jpg'];
   return (
     <main style={{ marginTop: '50px', display: 'flex', justifyContent: 'center' }}>
       <Box sx={{ width: '100vw' }}>
@@ -50,10 +65,57 @@ export default function Oborydovanie() {
         <Box
           sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={q} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={w} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={e} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={r} />
+          <CardKitchen
+            alt="Профессиональное торговое оборудование от Мебельщика в Твери и Тверской области"
+            name={'Проект №41'}
+            description={'ЛДСП'}
+            images={r}
+          />
+          <CardKitchen
+            alt="Оптимизация работы вашего магазина с торговым оборудованием от Мебельщика в Твери и Тверской области"
+            name={'Проект №42'}
+            description={'ЛДСП'}
+            images={u}
+          />
+          <CardKitchen
+            alt="Эффективные решения для бизнеса с мебелью торгового оборудования от Мебельщика"
+            name={'Проект №43'}
+            description={'ЛДСП'}
+            images={i}
+          />
+          <CardKitchen
+            alt="Индивидуальное торговое оборудование, подчеркивающее ваш бренд в Твери и Тверской области"
+            name={'Проект №44'}
+            description={'ЛДСП'}
+            images={o}
+          />
+          <CardKitchen
+            alt="Профессиональное торговое оборудование от Мебельщика в Твери и Тверской области"
+            name={'Проект №45'}
+            description={'ЛДСП'}
+            images={t}
+          />
+          <CardKitchen
+            alt="Профессиональное торговое оборудование от Мебельщика в Твери и Тверской области"
+            name={'Проект №46'}
+            description={'ЛДСП'}
+            images={y}
+          />
+
+          <CardKitchen
+            alt="Индивидуальное торговое оборудование, подчеркивающее ваш бренд в Твери и Тверской области"
+            name={'Проект №47'}
+            description={'ЛДСП'}
+            images={q}
+          />
+
+          <CardKitchen
+            alt=""
+            style={{ marginTop: '-300px' }}
+            name={'Проект №48'}
+            description={'ЛДСП'}
+            images={e}
+          />
         </Box>
       </Box>
     </main>

@@ -1,11 +1,9 @@
-import { TheFooter } from '../_src/components/TheFooter';
-import { TheHeader } from '../_src/components/TheHeader';
-import { Provider } from '../provider';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Офисы',
-  description: 'Next App',
+  title: 'Офисная мебель для вашего бизнеса | Мебельщик в Твери и Тверской области',
+  description:
+    'Офисная мебель от Мебельщика в Твери и Тверской области. Улучшите рабочее пространство с нашими современными решениями для офисов.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

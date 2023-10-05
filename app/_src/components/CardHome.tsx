@@ -6,9 +6,11 @@ import { useState } from 'react';
 
 interface CardProps {
   name: string;
+  alt: string;
+  src: string;
 }
 
-export const CardHome: React.FC<CardProps> = ({ name }) => {
+export const CardHome: React.FC<CardProps> = ({ name, src, alt }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -17,7 +19,7 @@ export const CardHome: React.FC<CardProps> = ({ name }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src="homeCard.jpg" alt="" className="card-image" />
+      <img src={src} alt={alt} className="card-image" />
       <div className="card-content">
         <Text size="sm" color="white">
           КАТАЛОГ

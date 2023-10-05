@@ -1,3 +1,6 @@
+.text_information{
+    margin-top: -20px;
+}
 @media screen and (max-width:1250px) {
     .first_section{
         display: flex;
@@ -47,7 +50,7 @@
     }
     .secont_section_content{
         display: flex;
-        width: 90% !important;
+        width: 100vw !important;
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;

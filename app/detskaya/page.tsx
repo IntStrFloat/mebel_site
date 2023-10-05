@@ -8,8 +8,13 @@ import Head from 'next/head';
 import { Metadata } from 'next';
 
 export default function Detskaya() {
-  const q = ['./detskaya/1/1.jpg', './detskaya/1/2.jpg'];
-  const w = ['./detskaya/2/1.jpg', './detskaya/2/2.jpg'];
+  const q = ['./detskaya/1/2.jpg', './detskaya/1/1.jpg'];
+  const i = ['./shkafi/8/1.jpg', './shkafi/14/1.jpg'];
+  const d = ['./shkafi/13/1.jpg'];
+  const e = ['./detskaya/4/1.jpg'];
+  const m = ['./detskaya/5/2.jpg', './detskaya/5/1.jpg'];
+  const n = ['./detskaya/6/1.jpg', './detskaya/6/2.jpg'];
+  const b = ['./detskaya/7/1.jpg'];
   return (
     <main style={{ marginTop: '50px' }}>
       <Box sx={{ width: '100vw' }}>
@@ -48,8 +53,55 @@ export default function Detskaya() {
         <Box
           sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={q} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={w} />
+          <CardKitchen
+            alt="Мебель для детей: радость и удобство от мебельной фабрики в Твери"
+            style={{ marginTop: '-100px' }}
+            name={'Проект №71'}
+            description={'ЛДСП'}
+            images={q}
+          />
+          <CardKitchen
+            alt="Комфорт и качество: детская мебель от Мебельщика в Твери"
+            style={{ marginTop: '-120px' }}
+            name={'Проект №72'}
+            description={'Доставка в пос. Грядки'}
+            images={d}
+          />
+          <CardKitchen
+            alt="Детские комнаты с яркой и функциональной мебелью в Тверской области"
+            style={{ marginTop: '-150px' }}
+            name={'Проект №73'}
+            description={'Доставка в пос. Грядки'}
+            images={i}
+          />
+          <CardKitchen
+            alt="Современные и безопасные детские мебельные решения"
+            style={{ marginTop: '-390px' }}
+            name={'Проект №74'}
+            description={'Доставка в пос. Грядки'}
+            images={m}
+          />
+          <CardKitchen
+            alt="Индивидуальная детская мебель от Мебельщика в Твери"
+            style={{ marginTop: '-150px' }}
+            name={'Проект №75'}
+            description={'Доставка в пос. Грядки'}
+            images={n}
+          />
+          <CardKitchen
+            alt='alt="Мебель для детей: радость и удобство от мебельной фабрики в Твери"'
+            style={{ marginTop: '-150px' }}
+            name={'Проект №76'}
+            description={'Доставка в пос. Грядки'}
+            images={b}
+          />
+          <CardKitchen
+            alt="Комфорт и качество: детская мебель от Мебельщика в Твери"
+            style={{ marginTop: '-150px' }}
+            name={'Проект №77'}
+            description={'ЛДСП'}
+            images={e}
+          />
         </Box>
       </Box>
     </main>

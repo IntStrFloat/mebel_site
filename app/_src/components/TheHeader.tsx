@@ -44,16 +44,23 @@ export const TheHeader = () => {
             </Text>
             <img src="mail.svg" alt="" />
             <Text sx={{ margin: '0px' }} weight={500} color="white" size="md">
-              mebelshik69@gmail.com
+              <a
+                style={{ textDecoration: 'none', color: 'white' }}
+                href="mailto:mebelshik69@gmail.com"
+              >
+                mebelshik69@gmail.com
+              </a>
             </Text>
           </Group>
 
           <Group>
-            <img src="phone.svg" alt="" />
-            <Text weight={500} color="white" size="md">
-              {' '}
-              +7 (915) 722 00 75
-            </Text>
+            <a style={{ display: 'flex', textDecoration: 'none' }} href="tel:89157220075">
+              <img src="phone.svg" alt="" />
+              <Text weight={500} color="white" size="md">
+                {' '}
+                +7 (915) 722 00 75
+              </Text>
+            </a>
           </Group>
         </Group>
       </Group>
@@ -142,6 +149,26 @@ export const TheHeader = () => {
             href="/oborydovanie"
           >
             Торговое оборудование
+          </Text>
+          <Text
+            className={opened ? 'nav_item' : 'nav_item close'}
+            color="dark"
+            weight={700}
+            size="lg"
+            component="a"
+            href="/prihozaya"
+          >
+            Прихожие
+          </Text>
+          <Text
+            className={opened ? 'nav_item' : 'nav_item close'}
+            color="dark"
+            weight={700}
+            size="lg"
+            component="a"
+            href="/vannie"
+          >
+            Ванные
           </Text>
           <Text
             className={opened ? 'nav_item' : 'nav_item close'}

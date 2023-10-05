@@ -7,9 +7,21 @@ import { useState } from 'react';
 import Head from 'next/head';
 export default function Office() {
   const q = ['./office/1/1.jpg', './office/1/2.jpg', './office/1/3.jpg', './office/1/4.jpg'];
-  const w = ['./office/2/1.jpg', './office/2/2.jpg'];
-  const e = ['./office/3/1.jpg'];
-  const r = ['./office/4/1.jpg'];
+
+  const r = ['./office/4/1.jpg', './office/4/2.jpg', './office/4/3.jpg'];
+  const w = [
+    './office/5/1.jpg',
+    './office/5/2.jpg',
+    './office/5/3.jpg',
+    './office/5/4.jpg',
+    './office/5/5.jpg',
+    './office/5/6.jpg',
+    './office/5/7.jpg',
+    './office/5/8.jpg',
+  ];
+  const g = ['./office/8/1.jpg', './office/8/2.jpg', './office/8/3.jpg', './office/8/4.jpg'];
+  const e = ['./office/6/1.jpg'];
+  const t = ['./office/7/1.jpg', './office/7/2.jpg'];
   return (
     <main style={{ marginTop: '50px' }}>
       <Box sx={{ width: '100vw' }}>
@@ -50,10 +62,32 @@ export default function Office() {
         <Box
           sx={{ display: 'flex', width: '100%', flexWrap: 'wrap', justifyContent: 'space-evenly' }}
         >
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={q} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={w} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={e} />
-          <CardKitchen name={'Кухня'} description={'Доставка в пос. Грядки'} images={r} />
+          <CardKitchen
+            alt="Современные офисные интерьеры от Мебельщика в Твери и Тверской области"
+            name={'Проект №31'}
+            description={'Металлокаркас'}
+            images={w}
+          />
+          <CardKitchen
+            alt="Офисная мебель для максимальной эффективности в Твери и Тверской области"
+            name={'Проект №32'}
+            description={'ЛДСП эгерь'}
+            images={q}
+          />
+
+          <CardKitchen
+            alt="Современные офисные интерьеры от Мебельщика в Твери и Тверской области"
+            name={'Проект №33'}
+            description={'ЛДСП'}
+            images={g}
+          />
+
+          <CardKitchen
+            alt="Современные офисные решения от мебельной фабрики Мебельщик в Твери и Тверской области"
+            name={'Проект №34'}
+            description={'ЛДСП'}
+            images={r}
+          />
         </Box>
       </Box>
     </main>

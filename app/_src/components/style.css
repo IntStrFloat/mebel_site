@@ -8,6 +8,7 @@
     background-color: white;
 }
 .card-container {
+  cursor: pointer;
   position: relative;
   margin-bottom: 2rem;
   width: 400px;
@@ -22,6 +23,7 @@
 }
 
 .card-container.hovered .card-image {
+  cursor: pointer;
   transform: scale(1.1); /* Увеличиваем картинку при наведении */
 }
 
@@ -81,6 +83,7 @@
     overflow: hidden;
   }
 }
+
 @media screen and (max-width:1250px) {
   /* .nav_item{
     display: none;
