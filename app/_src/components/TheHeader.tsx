@@ -46,9 +46,9 @@ export const TheHeader = () => {
             <Text sx={{ margin: '0px' }} weight={500} color="white" size="md">
               <a
                 style={{ textDecoration: 'none', color: 'white' }}
-                href="mailto:mebelshik69@gmail.com"
+                href="mailto:mebelshik69@mail.com"
               >
-                mebelshik69@gmail.com
+                mebelshik69@mail.com
               </a>
             </Text>
           </Group>

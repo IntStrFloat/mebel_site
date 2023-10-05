@@ -42,7 +42,16 @@ export default function Contacts() {
                 >
                   {' '}
                   7 (915) 722 00 75
+                </a>{' '}
+                - WhatsApp
+                <a
+                  style={{ textDecoration: 'none', color: 'rgb(163, 163, 163) ' }}
+                  href="tel:89036302909"
+                >
+                  {' '}
+                  7 (903) 630 29 09
                 </a>
+                - Viber
               </p>
               <h4 style={{ fontSize: '24px', fontWeight: 'bold' }}>Михаил Викторович:</h4>
               <p>
@@ -53,6 +62,7 @@ export default function Contacts() {
                   {' '}
                   7 (903) 630 63 70
                 </a>
+                - WhatsApp
               </p>
               <h4 style={{ fontSize: '24px', fontWeight: 'bold' }}>Почта:</h4>
               <p>

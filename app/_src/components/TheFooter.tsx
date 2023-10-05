@@ -88,7 +88,7 @@ export const TheFooter = () => {
             <Text mb={-15} weight={200}>
               Режим работы
             </Text>
-            <Text weight={200}>с 9:00 до 21:00</Text>
+            <Text weight={200}>с 9:00 до 18:00</Text>
           </Group>
           <Group>
             <a href="#">
@@ -307,25 +307,25 @@ export const TheFooter = () => {
             </Text>
             <Space h="md" />
             <Text color="#a3a3a3" size={15} component="p">
-              ПН: 9:00 - 21:00
+              ПН: 9:00 - 18:00
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              ВТ: 9:00 - 21:00
+              ВТ: 9:00 - 18:00
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              СР: 9:00 - 21:00
+              СР: 9:00 - 18:00
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              ЧТ: 9:00 - 21:00
+              ЧТ: 9:00 - 18:00
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              ПТ: 9:00 - 21:00
+              ПТ: 9:00 - 18:00
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              СБ: 9:00 - 21:00
+              СБ: Выходной
             </Text>
             <Text color="#a3a3a3" size={15} component="p">
-              ВС: 9:00 - 21:00
+              ВС: Выходной
             </Text>
           </Group>
         </Group>

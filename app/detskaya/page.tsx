@@ -64,35 +64,35 @@ export default function Detskaya() {
             alt="Комфорт и качество: детская мебель от Мебельщика в Твери"
             style={{ marginTop: '-120px' }}
             name={'Проект №72'}
-            description={'Доставка в пос. Грядки'}
+            description={'ЛДСП'}
             images={d}
           />
           <CardKitchen
             alt="Детские комнаты с яркой и функциональной мебелью в Тверской области"
             style={{ marginTop: '-150px' }}
             name={'Проект №73'}
-            description={'Доставка в пос. Грядки'}
+            description={'ЛДСП'}
             images={i}
           />
           <CardKitchen
             alt="Современные и безопасные детские мебельные решения"
             style={{ marginTop: '-390px' }}
             name={'Проект №74'}
-            description={'Доставка в пос. Грядки'}
+            description={'ЛДСП'}
             images={m}
           />
           <CardKitchen
             alt="Индивидуальная детская мебель от Мебельщика в Твери"
             style={{ marginTop: '-150px' }}
             name={'Проект №75'}
-            description={'Доставка в пос. Грядки'}
+            description={'ЛДСП'}
             images={n}
           />
           <CardKitchen
             alt='alt="Мебель для детей: радость и удобство от мебельной фабрики в Твери"'
             style={{ marginTop: '-150px' }}
             name={'Проект №76'}
-            description={'Доставка в пос. Грядки'}
+            description={'ЛДСП'}
             images={b}
           />
           <CardKitchen
