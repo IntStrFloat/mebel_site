@@ -38,7 +38,7 @@ export default function Oborydovanie() {
             flexDirection: 'column',
           }}
         >
-          <Title mb={20} size="500%">
+          <Title mb={20} size="300%">
             ТОРГОВОЕ ОБОРУДОВАНИЕ
           </Title>
           <Space h="xl" />
