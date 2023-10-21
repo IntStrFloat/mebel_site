@@ -65,41 +65,21 @@ export const TheHeader = () => {
         </Group>
       </Group>
       <Navbar
-        sx={{
-          textAlign: 'center',
-          boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.1)',
-          display: 'flex',
-          flexDirection: `${opened ? 'row' : 'column'}`,
-          alignItems: 'center',
-        }}
-        className={opened ? 'navMain' : 'navi '}
-        height={`${opened ? '50vh' : '6rem'}`}
+        className="navMain"
+        sx={{ height: `${opened ? '100vh' : '120px'} !important` }}
+        height={'120px'}
+        mx={'auto'}
       >
-        <Group
-          className={opened ? 'nav' : ''}
-          mx="auto"
-          sx={{
-            display: 'flex',
-            height: '100%',
-            width: '78%',
-            flexDirection: `${opened ? 'column' : 'row'}`,
-            justifyContent: 'space-evenly',
-            flexWrap: `${opened ? 'nowrap' : 'wrap'}`,
-            alignItems: 'center',
-          }}
-        >
-          <Box sx={{ height: '100%', display: 'flex', alignItems: 'flex-end' }}>
-            <Burger
-              mb={20}
-              size="lg"
-              className="burg"
-              opened={opened}
-              onClick={() => {
-                setOpened((prev) => !prev);
-              }}
-            />
-          </Box>
-
+        <Group className="headerWrapper">
+          <Burger
+            mb={0}
+            size="lg"
+            className="burgerItem"
+            opened={opened}
+            onClick={() => {
+              setOpened((prev) => !prev);
+            }}
+          />
           <Text
             className={opened ? 'nav_item' : 'nav_item close'}
             color="dark"

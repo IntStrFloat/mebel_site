@@ -23,7 +23,7 @@ export default function Shkafi() {
               flexDirection: 'column',
             }}
           >
-            <Title mb={20} size={70}>
+            <Title mb={20} size={40}>
               МЕБЕЛЬ ДЛЯ ВАННОЙ
             </Title>
             <Space h="xl" />

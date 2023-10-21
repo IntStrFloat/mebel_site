@@ -43,6 +43,22 @@ export const TheFooter = () => {
     }
   };
 
+  // const formRef = useRef<HTMLFormElement>(null);
+
+  // const sendEmail = (e: any) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm('service_baqvxul', 'template_r65qqp1', formRef.current!, '3nhcrOrwOyTEuYfJ7')
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       },
+  //     );
+  // };
   return (
     <footer>
       <Box

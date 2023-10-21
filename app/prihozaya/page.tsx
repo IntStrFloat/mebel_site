@@ -42,7 +42,7 @@ export default function Prihozaya() {
             flexDirection: 'column',
           }}
         >
-          <Title mb={20} size={70}>
+          <Title mb={20} size={40}>
             ПРИХОЖИЕ
           </Title>
           <Space h="xl" />

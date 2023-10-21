@@ -67,7 +67,7 @@ export default function Kitchen() {
             flexDirection: 'column',
           }}
         >
-          <Title mb={20} size={70}>
+          <Title mb={20} size={40}>
             КУХНИ
           </Title>
           <Space h="xl" />

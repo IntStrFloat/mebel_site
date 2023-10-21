@@ -17,7 +17,7 @@ export default function Contacts() {
               flexDirection: 'column',
             }}
           >
-            <Title mb={20} size={70}>
+            <Title mb={20} size={40}>
               КОНТАКТЫ
             </Title>
             <Space h="xl" />

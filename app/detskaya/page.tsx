@@ -27,7 +27,7 @@ export default function Detskaya() {
             flexDirection: 'column',
           }}
         >
-          <Title mb={20} size={70}>
+          <Title mb={20} size={40}>
             ДЕТСКАЯ МЕБЕЛЬ
           </Title>
           <Space h="xl" />

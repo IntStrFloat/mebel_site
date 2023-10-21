@@ -24,11 +24,17 @@ export const CardKitchen: React.FC<Props> = ({ alt, name, description, images, s
   };
 
   const slides = images.map((url, index) => (
-    <Carousel.Slide style={{ cursor: 'pointer' }} key={url} onClick={() => {}}>
+    <Carousel.Slide
+      style={{ cursor: 'pointer', height: '100% !important' }}
+      key={url}
+      onClick={() => {}}
+    >
       <Box
         sx={{
-          position: 'relative',
-
+          height: '100vh !important',
+          overflow: 'hidden',
+          display: 'flex',
+          alignItems: 'center !important',
           width: '100%',
         }}
       >
@@ -38,9 +44,10 @@ export const CardKitchen: React.FC<Props> = ({ alt, name, description, images, s
           style={{
             alignSelf: 'center',
             backgroundSize: 'cover',
+            objectFit: 'cover',
             backgroundPosition: 'center',
             width: '100%',
-            height: '100%',
+            height: '100vh !important',
             ...style,
           }}
           onClick={() => openHangler(url)}
@@ -60,6 +67,7 @@ export const CardKitchen: React.FC<Props> = ({ alt, name, description, images, s
         width: '820px',
         height: matchesPhone ? '350px' : '600px',
         backgroundColor: '#f2f2f2',
+        overflow: 'hidden !important',
       }}
       shadow="sm"
       padding="xl"
@@ -67,7 +75,7 @@ export const CardKitchen: React.FC<Props> = ({ alt, name, description, images, s
     >
       <Card.Section>
         <Carousel
-          sx={{ margin: '0px' }}
+          sx={{ margin: '0px', overflow: 'hidden !important' }}
           height={matchesPhone ? 200 : 450}
           withIndicators
           onSlideChange={(newSlide) => setActiveSlide(newSlide)}
@@ -100,16 +108,35 @@ export const CardKitchen: React.FC<Props> = ({ alt, name, description, images, s
         onClose={close}
         fullScreen
         size="xl"
-        sx={{ display: 'flex', alignItems: 'center' }}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          height: '90vh !important',
+          overflow: 'hidden',
+        }}
         transitionProps={{ transition: 'fade', duration: 200 }}
       >
-        <Box sx={{ width: '100%', display: 'flex' }}>
+        {/* <Box sx={{ width: '100%', display: 'flex' }}>
           <img
             src={selected}
             alt={`Image ${modalImageIndex}`}
             style={{ margin: 'auto', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }}
           />
-        </Box>
+        </Box> */}
+        <Carousel
+          sx={{
+            margin: '0px',
+            width: '100%',
+            overflow: 'hidden',
+            height: '100vh !important',
+          }}
+          height={matchesPhone ? 200 : 450}
+          withIndicators
+          onSlideChange={(newSlide) => setActiveSlide(newSlide)}
+          controlSize={50}
+        >
+          {slides}
+        </Carousel>
       </Modal>
     </Card>
   );
